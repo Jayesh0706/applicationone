@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://pngimg.com/uploads/letter_m/letter_m_PNG48.png">
+    <meta charset="utf-8">
+    <title>MPPT</title>
+</head>
+<!-- CSS Stylesheet Starts Here -->
+<style>
+    body {
+        background-color: transparent;
+    }
+    
+    h1 {
+        font-family: 'cooper';
+        width: 100%;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        background: transparent;
+        text-shadow: black 1px 1px;
+        padding-top: 1%;
+        position: relative;
+        animation-name: textanimation;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes textanimation {
+        0% {
+            background-color: transparent;
+            left: 100%;
+            top: 0px;
+        }
+        25% {
+            background-color: transparent;
+            right: 00%;
+            top: 0px;
+        }
+        /*50%{background-color:transparent; left:100%; top:0px;}
+	75%{background-color:transparent; left:0px; top:00px;}*/
+        100% {
+            background-color: transparent;
+            left: -100%;
+            top: 0px;
+        }
+    }
+    
+    h2 {
+        font-family: 'serif';
+        font-size: 25px;
+        color: navy;
+        text-align: center;
+        text-decoration: overline underline;
+    }
+    
+    h3 {
+        font-family: 'serif';
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    h4 {
+        font-family: 'cambria';
+        font-size: 23px;
+        color: brown;
+        text-align: left;
+        text-decoration: underline;
+    }
+    
+    p {
+        font-family: 'Times New Roman';
+        font-size: 20px;
+        color: black;
+        text-align: justify;
+    }
+    
+    nav {
+        float: left;
+        width: 30%;
+        height: 300px;
+        /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+    }
+    
+    footer {
+        background-color: orange;
+        padding: 0px;
+        text-align: center;
+        color: white;
+    }
+    
+    <!-- -->button:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
+    
+    button:focus {
+        outline-color: orange;
+        outline-style: solid;
+    }
+</style>
+
+<body>
+    <!-- Button Background Strip -->
+    <div style="background-color:white; color:white; width:100%; height:5%;">
+
+        <!-- Navigation Buttons -->
+        <div style="height:20px; width:auto;" class="topnav">
+            <a class="active" href="/about/" target="_blank"> <button>About Project</button></a>
+            <a class="active" href="/predictresult/" target="_blank"> <button>Test Page</button></a>
+            <!---->
+            <a class="active" href="/studentprofile/" target="_blank"> <button>Student Profile</button></a>
+            <a class="active" href="https://rst1718.in" target="_blank"> <button>About Sponsorer </button></a>
+            <hr>
+            <hr>
+            <br><br>
+        </div>
+    </div>
+
+    <!-- Header -->
+
+    <div style="background-color:lightblue; width:100%;">
+        <h1>METAL PROPERTIES PREDICTION TOOL</h1>
+        <h2>An easy way to conduct destructive testing!</h2>
+        <hr>
+    </div>
+
+    <!-- Section -->
+    <p>In this section, we are proving an information to conduct the various tests on developed test specimen. Do follow our navigation bar for more specified test facilities.</p>
+    <table>
+        <tr>
+            <th style="background-color:navy; width:200px; height:40px; color:yellow;">Test</th>
+            <th style="background-color:navy; width:300px; height:40px; color:yellow;">Image</th>
+            <th style="background-color:navy; width:1000px; height:40px; color:yellow;">Description</th>
+        </tr>
+        <tr>
+            <td style="background-color:tranparent; width:200px; height:40px;">Material Classification</th>
+                <td style="background-color:tranparent; width:300px; height:40px;">
+                    <image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUY-k65A_bsCuvts64Z6DLpEChYUKsdtNQC8aMg3ESvepF4lrR4zWHI8KFA23S1xe8new&usqp=CAU" alt="Shear Test Image" style="width:200px;height:200px;">
+                        </th>
+                        <td style="background-color:tranparent; width:1000px; height:40px;">
+                            <p>The engineering materials can broadly be classified as: a) Ferrous Metals b) Non-ferrous Metals (aluminum, magnesium, copper, nickel, titanium) c) Plastics (thermoplastics, thermosets) d) Ceramics and Diamond e) Composite Materials
+                                & f) Nano-materials. These engineering materials are often primarily selected based on their mechanical, physical, chemical and manufacturing properties.</p>
+                            </th>
+        </tr>
+        <tr>
+            <td style="background-color:tranparent; width:200px; height:40px;">Material Science</th>
+                <td style="background-color:tranparent; width:300px; height:40px;">
+                    <image src="data:image/jpeg;base64,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"
+                        alt="Shear Test Image" style="width:200px;height:200px;">
+                        </th>
+                        <td style="background-color:tranparent; width:1000px; height:40px;">
+                            <p>Materials science is an interdisciplinary field concerned with the understanding and application of the properties of matter.Here we tudy the connections between the underlying structure of a material, its properties, its processing
+                                methods and its performance in applications.</p>
+                            </th>
+        </tr>
+        <tr>
+            <td style="background-color:tranparent; width:200px; height:40px;">Tension Test</th>
+                <td style="background-color:tranparent; width:300px; height:40px;">
+                    <image src="https://www.researchgate.net/publication/276177932/figure/fig1/AS:294501265494038@1447225981755/Specimen-geometry-and-test-setup-for-the-direct-tension-test.png" alt="tension Test Image" style="width:200px;height:200px;">
+                        </th>
+                        <td style="background-color:tranparent; width:1000px; height:40px;">
+                            <p>Tensile testing, also known as tension testing,is a fundamental materials science and engineering test in which a sample is subjected to a controlled tension until failure. Tensile testing provides details of the tensile mechanical
+                                properties of a material. These properties can be plotted on a graph as a stress/ strain curve to show details such as the point at which the material failed as well as providing details of properties such as the modulus
+                                of elasticity, strain and yield strength. </p>
+                            </th>
+        </tr>
+        <tr>
+            <td style="background-color:tranparent; width:200px; height:40px;">Shear Test</th>
+                <td style="background-color:tranparent; width:300px; height:40px;">
+                    <image src="https://www.mecmesin.com/sites/default/files/styles/case_study_640px_square/public/case-study/2020-12/lap-shear-test-wood-pneumatic-grips-test-specimen.jpg?itok=6kYEUOhw.jpg" alt="Shear Test Image" style="width:200px;height:200px;">
+                        </th>
+                        <td style="background-color:tranparent; width:1000px; height:40px;">
+                            <p>A shear test is designed to apply stress to a test sample so that it experiences a sliding failure along a plane that is parallel to the forces applied. Generally, shear forces cause one surface of a material to move in one
+                                direction and the other surface to move in the opposite direction so that the material is stressed in a sliding motion. Shear tests differ from tension and compression tests in that the forces applied are parallel to the
+                                two contact surface, whereas, in tension and compression they are perpendicular to the contact surfaces.</p>
+                            </th>
+        </tr>
+
+    </table>
+    <br>
+    <hr>
+
+    <div style="background-color:brown; width:100%;">
+        <h3>*** Basic Terms related to Destructive Testing ***</h3>
+    </div>
+    <div>
+        <h4>What is Destructive Testing?</h4>
+        <p>Destructive testing is undertaken in order to understand a specimen’s performance or material behaviour, these procedures are carried out to the test specimen’s failure. Destructive testing procedures can either follow specific standards or can
+            be tailored to reproduce set service conditions. Destructive testing methods are commonly used for materials characterisation, fabrication validation, failure investigation, and can form a key part of engineering critical assessments, which
+            also involves non-destructive testing (NDT) techniques such as digital radiography.</p>
+        <h4>What is the need of testing?</h4>
+        <p>Destructive testing's ultimate goal is to determine how a material will respond to high stress or loads. When considering employing a material for important engineering designs, manufacturing techniques, and product designs, it is essential to
+            understand how much stress the material can endure before completely failing.</p>
+        <h4>What is Ultimate Tensile Strength of Materials?</h4>
+        <p>Ultimate tensile strength (UTS), often shortened to tensile strength (TS), is the maximum stress that a material can withstand while being stretched or pulled before breaking. Tensile strength is a mechanical property that is often used to determine
+            critical design parameters by engineers. Basic mechanics of materials engineering formulas require tensile strength, and therefore today’s design software also requires this material information. Tensile strength may not always be the critical
+            stress in a design. In fact, some designs may not have any tensile stress. However, tensile strength can also be used as an indicator of other strengths in a material. Engineers can use tensile strength as another indicator of overall material
+            strength when other mechanical properties are unavailable. </p>
+        <h4>What is Shear Strength of Material?</h4>
+        <p> A shear load is a force that may produce a sliding failure on material along a plane that is parallel to the direction of the force. Shear strength is related to the type of fill material, whether it is high quality or poor quality, reflected
+            in its stress and porosity. The shear strength of cohesive material can be tested directly with a field vane test in a borehole. It can also be correlated to cone penetration tests or standard penetration tests.</p>
+        <h4>What is Elastic Modulus of Material?</h4>
+        <p>Young’s Modulus (also referred to as the Elastic Modulus or Tensile Modulus), is a measure of mechanical properties of linear elastic solids like rods, wires, and such. Other numbers measure the elastic properties of a material, like Bulk modulus
+            and shear modulus, but the value of Young’s Modulus is most commonly used. This is because it gives us information about the tensile elasticity of a material (ability to deform along an axis).</p>
+        <h4>What is Density of Material?</h4>
+        <p> A density is a physical property of material, which may be defined as ration of mass of material to the its volume.</p>
+    </div>
+    <!-- Footer -->
+    <footer>
+        &copy; Renuka Services and Technology Pvt. Ltd.
+        <p style="color:white; text-align:center;">Powered By: <a href="https://rst1718.in" target="_blank">Renuka Services and Technology Pvt. Ltd.</p></a>
+    </footer>
+
+</body>
+
+</html>

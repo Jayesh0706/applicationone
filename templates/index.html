@@ -1,0 +1,36 @@
+{%load static%}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style.css' %}">
+       
+    </head>
+    <!-- <body> -->
+    <body id="bg-login" style="background-image: url('{%static 'images/dsp3.jpg'%}');">
+        
+        <h2>Login here</h2>
+        
+        <form method="post" action="/logincheck/" class="login">
+            {% csrf_token %}
+           Email Id: <input type="text" id="Uname" name="username"><br>
+
+           Password:<input type="password" id="Uname" name="password">
+           <br>
+           <br>
+           <button type="submit" id="log" value="login">Login</button>
+           <p>If New user?<a href="/registration/">Register Here</a></p>
+        </form>
+        
+        <div class="message">
+            {% if messages %}
+            {% for m in messages %}
+            <!-- {{m}} -->
+            <script>
+                alert('{{ m}}');
+            </script>
+            {% endfor %}
+            {% endif %}
+         </div>
+        
+       
+    </body>
+</html>

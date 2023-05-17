@@ -1,0 +1,26 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style.css' %}">
+        <style>
+            body{
+                background-color: rgb(185, 196, 243);
+            }
+        </style>
+    </head>
+    <body id="bg-register" style="background-image: url('{%static 'images/crp3.jpg'%}');" >
+        <h6>Register Here</h6>
+        <form action="/savedata/" method="post" class="register" >
+            {% csrf_token %}
+            <span class="lable">
+            Firstname:<input type="text" name="firstname" ><br><br>
+            Lastname:<input type="text" name="lastname" ><br><br>
+            City:<input type="text" name="city" ><br><br>
+            Mobile-No:<input type="number" name="mobileno" ><br><br>
+            Email-id:<input type="email" name="emailid" ><br><br>
+            Password:<input type="password" name="password" ><br><br>
+            </span>
+            <input type="submit" id="log" value="register" >
+        </form>
+    </body>
+</html>

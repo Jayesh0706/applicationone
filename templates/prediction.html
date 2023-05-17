@@ -1,0 +1,74 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style.css' %}">
+    </head>
+    <body id="bg-login" style="background-image: url('{% static 'images/crp1.jpg' %}');">
+        <form class="login" action="/predictresult/" method="post">
+            {% csrf_token %}
+            Application:
+            <select name="a">
+                <option value="Repetition Machining">Repetition Machining</option>
+                <option value="Sheet Metal Work">Sheet Metal Work</option>
+                <option value="Structural Application">Structural Application</option>
+                <option value="Light Duty Structural Applications">Light Duty Structural Applications</option>
+                <option value="Hing Pin">Hing Pin</option>
+                <option value="Couplings">Couplings</option>
+                <option value="Valves">Valves</option>
+                <option value="General Bearings">General Bearings</option>
+                <option value="Pump Impeller">Pump Impeller</option>
+                <option value="Gears">Gears</option>
+                <option value="Bearings">Bearings</option>
+                <option value="Bushes">Bushes</option>
+                <option value="Shaft">Shaft</option>
+                <option value="Axles">Axles</option>
+                <option value="Bolts">Bolts</option>
+                <option value="Studs">Studs</option>
+                <option value="Connecting Rods">Connecting Rods</option>
+                <option value="Fasteners">Fasteners</option>
+                <option value="Nut and Bolts">Nut and Bolts</option>
+                <option value="Screws">Screws</option>
+                <option value="Aircraft Fitting">Aircraft Fitting</option>
+                <option value="BUshes">BUshes</option>
+                <option value="Shafts">Shafts</option>
+            </select>
+            <br>
+            {% comment %} <span class="hint">Numerical Values Only:</span> {% endcomment %}
+            Designation: <input type="text" name="d" placeholder="Numerical Values Only"><br>
+            Tensile Strength: <input type="text" name="t" placeholder="Numerical Values Only"><br>
+            Melting Point: <input type="text" name="m" placeholder="Numerical Values Only"><br>
+            <br>
+            <button type="submit" id="log" value="Prediction">Predict Material Name</button>
+        </form>
+    </body>
+</html>
+
+
+
+
+
+{% comment %} <html>
+    {%load static%}
+    <head>
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style.css' %}">
+    </head>
+    <body id="bg-login" style="background-image: url('{%static 'images/crp1.jpg'%}');">
+        <form class="login" action="/predictresult/" method="post">
+            {%csrf_token%}
+            Application: <input type="text" name="a"><br>
+            Designation: <input type="text" name="d"><br>
+            Tensile Strength: <input type="text" name="t"><br>
+            Melting Point:<input type="text" name="m"><br>
+            <br>
+            <button type="submit" id="log" value="Prediction">Predict Material Name</button>
+            <!-- <input type="submit" value="Prediction"> -->
+        </form>
+
+    </body>
+</html>
+
+
+ {% endcomment %}
+
+
+ 
