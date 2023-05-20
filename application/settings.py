@@ -89,10 +89,10 @@ WSGI_APPLICATION = "application.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'crop',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST':'localhost',
+        'NAME': 'database-material-app',
+        'USER': 'material123',
+        'PASSWORD': 123456789,
+        'HOST':'database-material-app.cu2gfutdvx5g.eu-north-1.rds.amazonaws.com',
         'PORT':'3306',
     }
 }
